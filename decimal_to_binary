@@ -1,0 +1,21 @@
+import java.io.*;
+class Main {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(Sysetm.in);
+int n=sc.nextInt();
+       StringBuilder s=new StringBuilder();
+       while(n>0){
+           if(n%2==1){
+               s.append("1");
+              
+           }
+           else{
+               s.append("0");
+             
+           }
+           n/=2;
+       }
+      
+      System.out.println(s.reverse().toString());
+    }
+}
